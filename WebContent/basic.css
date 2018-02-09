@@ -1,0 +1,155 @@
+/* CSS para tags (geral) */
+
+p{
+	
+	text-align: center;
+	
+}
+
+button{
+	
+	margin: 2% 0;
+	
+}
+
+
+
+
+
+
+#main{
+	
+	background-color: #cccccc;
+	
+}
+
+h1{
+	
+	text-align: center;
+	font-weight: bold;
+	font-size: 2a;
+	
+}
+
+#painel{
+	
+	position: absolute;
+	left: 25%;
+	right: 25%;
+
+}
+
+#texto{
+	
+	margin: 3% 35%;
+	height: 40px;
+	width: auto;
+	
+}
+
+#logo{
+	
+	height: 18px;
+	width: auto;
+	
+}
+
+/* -------------------------------------------------------------------------------------- */
+/* CSS da pagina de login(entrar) */
+
+#logo-tjrn{
+	
+	height: 45px;
+	width: auto;
+
+}
+
+
+
+
+#botoes{
+	
+	
+}
+
+#botao-urgente{
+	
+	margin: 0 30%;
+	
+}
+
+
+#funcoes{
+	
+	height: 60px;
+	width: 60px;
+	margin: 2% 0;
+}
+
+#funcoes:hover{
+	
+	
+}
+
+/* --------------------------------------------------------------------------------------- */
+
+/* Controlador do visual de acorda com a resolução */
+
+/* navegador móvel (celulares pequenos) */
+@media (min-width: 100px) {
+	#navegador{display: none;}
+	#navegador-movel{display: block;}
+	#botoes{ margin: 10% 42%;}
+}
+
+/* Navegador móvel/PC (celulares Médios e Grandes) */
+@media (min-width: 1024px) {
+	#navegador{display: block;}
+	#navegador-movel{display: none;}
+	
+	#botoes{ margin: 10% 39%;}
+	
+	#painel-logo{
+	
+		margin: 4% 4%;
+		
+	}
+	
+	#painel-login{
+	
+		margin: 4% 4%;
+		
+	}
+	
+}
+
+/* Navegador PC (telas grandes) */
+@media (min-width: 1300px) {
+	
+	#navegador{display: block;}
+	#navegador-movel{display: none;}
+	
+	#botoes{ margin: 10% 40%;}
+	
+	
+	#painel-logo{
+	
+		margin: 0 4%;
+		
+	}
+	
+	#painel-login{
+	
+		margin: 0 4%;
+		
+	}
+	/* caracteristicas moveis da tela de LOGIN */
+	
+	#botao-login{
+		postion: absolute;
+		left: 22%;
+	}
+	
+	
+}
+

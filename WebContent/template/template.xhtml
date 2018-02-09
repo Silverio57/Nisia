@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html 
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+	
+	<h:head>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		
+		<title>Nisia home</title>
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+		
+		
+		<!-- CSS secundario para controlar componentes simples -->
+		<link rel="stylesheet" href="basic.css"/>
+	
+		
+		
+		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/>
+		
+	</h:head>
+	
+	<h:body id="main">
+	
+		<!-- navegador para versão PC -->
+		<nav id="navegador" class="navbar navbar-default navbar-inverse">
+			<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+      
+					<a class="navbar-brand" href="#"><img id="logo" src="img/logo-app-nisia.png"/></a>
+				</div>
+				
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Principal<span class="sr-only">(current)</span></a></li>
+					<li><a href="#">Ocorrências</a></li>
+					<li><a href="#">Fórum <span class="badge">3</span></a></li>
+				</ul>
+				
+				<ul class="nav navbar-nav navbar-right">
+				
+					<li><a href="#">Olá usuária <img id="logo" src="img/protegidaLogo.png"/></a></li>
+				
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Opções<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Opções</a></li>
+							<li><a href="#">Ajuda</a></li>
+							<li><a href="sair.xhtml">Sair</a></li>
+						</ul>
+					</li>
+				
+				</ul>
+				
+				
+
+			</div><!-- /.container-fluid -->
+		</nav>
+		
+		<!-- navegador para versão movel -->
+		<nav id="navegador-movel" class="navbar navbar-default navbar-inverse">
+			<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+      
+					<a class="navbar-brand" href="#"><img id="logo" src="img/logo-app-nisia.png"/></a>
+				</div>
+				
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Principal<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Ocorrências</a></li>
+							<li><a href="#">Fórum <span class="badge">3</span></a></li>
+						</ul>
+					</li>
+				</ul>
+				
+				<ul class="nav navbar-nav navbar-right">
+				
+					<li><a href="#">Olá usuária<img id="logo" src="img/protegidaLogo.png"/></a></li>
+				
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Opções<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Opções</a></li>
+							<li><a href="#">Ajuda</a></li>
+							<li><a href="sair.xhtml">Sair</a></li>
+						</ul>
+					</li>
+				
+				</ul>
+				
+				
+
+			</div><!-- /.container-fluid -->
+		</nav>
+		
+		
+		<!-- painel central de conteudo -->
+		<div id="container-principal">
+			
+			
+			<div id="painel" class="panel panel-default">
+				<div class="panel-heading">
+					<h1 class="panel-title">Ações</h1>
+				</div>
+				<div class="panel-body">
+				<ui:insert name="page-body" > </ui:insert>
+					
+				</div>
+			</div>
+		</div>
+		
+		
+		<nav class="navbar navbar-default navbar-fixed-bottom navbar-inverse">
+			<div class="navbar-baixo">
+			</div>
+		</nav>
+	
+		
+
+	</h:body>
+</html>

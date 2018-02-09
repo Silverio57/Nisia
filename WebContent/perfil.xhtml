@@ -1,0 +1,25 @@
+<ui:composition template="/template/template.xhtml"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+			
+			<ui:define name="page-body">
+			<h:form>
+			
+				<div id="botoes" class="btn-group" role="group" aria-label="...">
+					<form action="nome-bagaca" enctype="multipart/form-data" type="get">
+						<input name="upload" type="file"/>
+						<h:commandButton value="Enviar" action="#{MBeanEvnviar.upload}">
+							<f:ajax event="click" render="panel-body"/>
+						</h:commandButton>
+					</form>
+				</div>
+				
+				<p:commandButton value="Sair" action="#{loginMBean.logoff}" ajax="false" />
+			</h:form>
+			
+		</ui:define>
+
+</ui:composition>

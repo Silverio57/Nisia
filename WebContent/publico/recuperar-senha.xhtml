@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html 
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+	
+	<h:head>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		
+		<title>Nisia home</title>
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	
+	
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		
+		
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+		<!-- CSS secundario para controlar componentes simples -->
+		<link rel="stylesheet" href="basic.css"/>
+	</h:head>
+	
+	<h:body id="main">
+	
+		<!-- navegador para versão PC -->
+		<nav id="navegador" class="navbar navbar-default navbar-inverse">
+			<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+      
+					<a class="navbar-brand" href="#"><img id="logo" src="img/logo-app-nisia.png"/></a>
+				</div>
+				
+				<ul class="nav navbar-nav">
+					<li><a>Dispositivo de proteção à mulher contra a violência doméstica</a></li>
+				</ul>
+				
+				<ul class="nav navbar-nav navbar-right">
+				
+					<li><a href="entrar.xhtml">Entrar <img id="logo" src="img/logoCadastro.png"/></a></li>
+				
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ajuda<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Esqueci minha senha</a></li>
+							<li><a href="sobre-nisia.xhtml">O que é Nisia?</a></li>
+						</ul>
+					</li>
+				
+				</ul>
+				
+				
+
+			</div><!-- /.container-fluid -->
+		</nav>
+		
+		<!-- navegador para versão movel -->
+		<nav id="navegador-movel" class="navbar navbar-default navbar-inverse">
+			<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+      
+					<a class="navbar-brand" href="#"><img id="logo" src="img/logo-app-nisia.png"/></a>
+				</div>
+				
+				<ul class="nav navbar-nav">
+					<li><a>Dispositivo de proteção à mulher contra a violência doméstica</a></li>
+				</ul>
+				
+				<ul class="nav navbar-nav navbar-right">
+				
+					<li><a href="entrar.xhtml">Entrar <img id="logo" src="img/logoCadastro.png"/></a></li>
+				
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ajuda<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Esqueci minha senha</a></li>
+							<li><a href="sobre-nisia.xhtml">O que é Nisia?</a></li>
+						</ul>
+					</li>
+				
+				</ul>
+				
+				
+
+			</div><!-- /.container-fluid -->
+		</nav>
+		
+		
+		<div id="container-principal">
+			
+			<!-- Painel com as informações do site -->
+    		<div id="container-principal">
+			
+			<!-- com todos os componentes -->
+			<div id="painel" class="panel panel-default">
+				<div class="panel-heading">
+					<h1 class="panel-title">Recuperar Senha</h1>
+				</div>
+				<div class="panel-body">
+    				
+    				<!-- pequeno painel com campo para adcionar o email -->
+					<p:panel id="painel-login" header="Recuperar Senha" style="margin: 20px 20px">
+        				<!-- formulario para enviar o email -->
+        				<form>
+        				<h:panelGrid columns="2" cellpadding="10">
+            				<h:outputText value="E-mail: " />
+                			<p:inputText style="margin: 2% 2%;"/>
+        				</h:panelGrid>
+        				<p:commandButton id="botao-recuperarSenha" value="Enviar" />
+        				</form>
+    				</p:panel>
+    				
+    				
+    				<!-- informacoes sobre a aplicacao -->
+    				<p:panel id="basic" header="Recuperando a senha" footer="Tribunal Judiciário do 
+    											Estado do Rio Grande do Norte" style="margin: 20px 20px">
+        				<h:panelGrid columns="2" cellpadding="10">
+            				<div id="div-logo-tjrn"><img id="logo-tjrn" src="img/logoTjrn.png" /></div>
+            				<h:outputText value="Ao clicar em 'Enviar Senha' você receberá sua senha
+            				de login no aplicativo Nisia em seu e-mail. Para uma segurança maior
+            				recomendamos que siga as seguintes dicas:" />
+            				<ul>
+            					<li>Não permita que outras pessoas tenham acesso a seu e-mail;</li>
+            					<li>Mude sua senha do Nisia após recuperar a antiga;</li>
+            					<li>Mantenha seu endereço de e-mail atualizado.</li>
+            				</ul>
+        				</h:panelGrid>
+    				</p:panel>
+    				
+				</div>
+			</div>
+		</div>
+    		
+			
+			
+		</div>
+		
+	</h:body>
+</html>
